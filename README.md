@@ -13,20 +13,20 @@ A robust, highly optimized FM radio receiver built with an Arduino Nano, a TEA57
 ## 🛠️ Hardware Requirements
 
 * 1x Arduino Nano (ATmega328P)
-* 1x TEA5767 FM Radio Module (with included antenna)
+* 1x TEA5767 FM Radio Module
 * 1x LTK5128 Mini Class-AB Audio Amplifier
 * 1x 16x2 LCD with I2C Backpack
 * 3x Push Buttons (Mode, Action, Lock)
 * 2x 10kΩ Resistors (I2C Pull-ups)
-* 2x 1kΩ Resistors (Mono Summing Buffer)
+* 2x 2.2kΩ Resistors (Mono Summing Buffer)
 * 1x 10µF Electrolytic Capacitor (DC Blocking)
 * 1x 10kΩ Potentiometer (Volume Control)
 * 1x 10kΩ Potentiometer (Manual Tuning)
 * 1x 4Ω or 8Ω Speaker 
 
 ## 🔌 Circuit & Wiring Notes
+![Circuit Schematic](images/Schematic.png)
 
-*(Insert your Fritzing schematic image here: `![Schematic](link_to_your_image.jpg)`)*
 
 **Important Hardware Engineering Notes:**
 1. **Logic Levels:** The entire circuit, including the TEA5767 and LTK5128, is powered directly from the 5V rail. Pull-up resistors on SDA/SCL are tied to 5V to match the Arduino Nano's logic level.
